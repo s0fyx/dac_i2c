@@ -91,11 +91,7 @@ esp_err_t mcp4725_set_output(uint16_t value, bool eeprom)
 {
     esp_err_t err = 0;
 
-    uint8_t data[] = {
-        (eeprom ? 0x60 : 0x40),
-        value >> 4,
-        value << 4
-    };
+    uint8_t data[] = {(eeprom ? 0x60 : 0x40), value >> 4, value << 4};
 
     err = i2c_master_transmit(dev_handle, data, sizeof(data), -1);
 
