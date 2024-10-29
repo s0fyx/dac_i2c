@@ -1,8 +1,8 @@
 # dac_i2c_mcp4725
 
-Este es un ejemplo sencillo para el uso de i2c con ESP32 para el modulo MCP4725 en ESP-IDF 5.4
+Sample example for using I2C with ESP32 for the MCP4725 module in ESP-IDF 5.4
 
-# Uso
+# Use
 
 ```c
 void app_main(void)
@@ -21,7 +21,7 @@ void app_main(void)
 }
 ```
 
-# Funciones
+# Functions
 
 ```c
 esp_err_t i2c_mcp4725_init(i2c_port_num_t port, uint8_t sda, uint8_t scl, uint16_t speed);
